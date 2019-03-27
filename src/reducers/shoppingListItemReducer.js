@@ -7,7 +7,7 @@ export default function shoppingListItemReducer(state = {
     case 'INCREASE_COUNT':
       console.log(state.items.concat(state.items.length));
       return Object.assign({}, {
-        items: state.items.concat(state.items.length)
+        items: state.items.concat(state.items.length + 1)
       });
 
     default:
